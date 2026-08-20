@@ -1,0 +1,8 @@
+[package]
+name = "compound-datatype"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "compound-datatype"
+path = "main.rs"
