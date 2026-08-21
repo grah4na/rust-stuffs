@@ -53,5 +53,5 @@ println!("slice is :{}",slice)
 //`&str` (string slice) → Borrows text; it’s a view into existing UTF-8 string data and doesn’t own it.
 //`&[T]` (slice) → Borrows a portion of an array/vector of any type `T`, without owning it.
 
-**//Simple analogy:** `String` = owning a book, `&str` = reading a page from it, `&[T]` = viewing part of any list.
+//Simple analogy: `String` = owning a book, `&str` = reading a page from it, `&[T]` = viewing part of any list.
 
