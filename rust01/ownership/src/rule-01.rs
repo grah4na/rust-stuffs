@@ -8,7 +8,9 @@ fn main() {
     let len = calc_len(&s1);
     // i am accessing the value "&s1" without taking ownership which is called reference.
 
-    //RULE 02 :  if i ever wrote "s1 = s2" which will give errror since there can be only one owner at a time.
+    // let s2 = s1;
+    // println!("{}",s1);
+    // it wont run , here 's2' got the ownership so s1 is now invalid.
     println!("lenght of '{}' is : {}",s1,len);
     
 }
