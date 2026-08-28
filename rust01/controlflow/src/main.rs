@@ -31,3 +31,5 @@ fn main (){
         println!("you cannot drive  ");
     }
 }
+
+// one rule in rust that the datatype in if condition and else condition must be same 
