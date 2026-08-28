@@ -6,6 +6,8 @@ rust has 3 types of loops
  */
 fn main() {
     lup();
+    forloop();
+    whileloop();
 }
 
 fn lup (){
@@ -20,3 +22,20 @@ fn lup (){
     println!("the result is {result}")
 }
 
+fn forloop(){
+    let a = [1,2,3,4,5,6];
+
+    for element in a{
+        println!("{element}");
+    };
+}
+
+fn whileloop(){
+    let mut number = 3;
+    while number != 0{
+        println!("{number}");
+        number -= 1;
+        break ;
+    };
+    println!("while loop ended ");
+}
