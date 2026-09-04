@@ -17,8 +17,17 @@
     let is_snowing :  bool = true;
     println!("is it snowing : {}",is_snowing);
 
+    //fn main() {
+//     let t = true;
+
+//     let f: bool = false; // with explicit type annotation
+// }
+
     //character type 
     // there is only one type
+
+    //rust will have types such as "usize" and "isize" which means the size depends on the architecture of the system
+
 
     let character : char = 'a';
     println!("the charatcter is :{}",character);

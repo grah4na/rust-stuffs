@@ -25,11 +25,16 @@ fn main() {
 
 fn main (){
     let age = 17;
-    if age >= 18 {
+    if age >= 18 {  // condition in control must be a bool type 
         println!("you can drive ");
     } else if age < 18 {
         println!("you cannot drive  ");
     }
+
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
 }
 
 // one rule in rust that the datatype in if condition and else condition must be same 

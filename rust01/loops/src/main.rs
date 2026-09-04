@@ -25,7 +25,8 @@ fn lup (){
 fn forloop(){
     let a = [1,2,3,4,5,6];
 
-    for element in a{  // here the keyword "element" can be anything 
+    for element in a{  // here the keyword "element" can be anything clear
+    
         println!("{element}");
     };
 }

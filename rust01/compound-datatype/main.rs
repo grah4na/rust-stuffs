@@ -7,6 +7,11 @@ fn main(){
 let number : [i32;5] = [1,2,3,4,5];
 println!("number array  :{:?}",number);
 
+//every element in an array should have same length also arrays are fixed length 
+
+let a = [3; 5];
+// this is same as writing a = [3,3,3,3,3]
+
 let fruits : [&str;3] = ["apple","banana","mango"];
 println!("fruits array  :{:?}",fruits);
 
@@ -17,11 +22,33 @@ println!("1st element of the array :{}",fruits[0]);
 let human = ("alice",30,false);
 println!("tuples : {:?}",human);
 
+//once we declare the tuples , it cant be shrinked or grow  
+//tuples can have diff types and 
+
 let humans:(String,i32,bool) = ("nandan".to_string(),43,true); 
 
 //used ".to_string()" to change it or else we can continue with "&str" asw.
 
 println!("tuples : {:?}",humans);
+
+
+fn main() {
+    let tup = (500, 6.4, 1);
+
+    let (x, y, z) = tup;
+
+    println!("The value of y is: {y}");
+}
+
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+
+    let five_hundred = x.0;
+
+    // we can access the tuple value like this 
+
+
+
+
 
 //slices :
 let numberslices : &[i32]= &[1,2,3,4,5];
