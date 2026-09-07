@@ -43,4 +43,39 @@ fn main() {
 
     //accessing it 
     println!("red {} , green {} , blue {}",black.0 , black.1 , black.2);
+
+
+    fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username,           // it is called field init shorthand 
+        email,
+        sign_in_count: 1,
+    }
 }
+
+}
+
+
+// use of structs in a program
+
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
+
+// fn main() {
+//     let rect1 = Rectangle {
+//         width: 30,
+//         height: 50,
+//     };
+
+//     println!(
+//         "The area of the rectangle is {} square pixels.",
+//         area(&rect1)
+//     );
+// }
+
+// fn area(rectangle: &Rectangle) -> u32 {
+//     rectangle.width * rectangle.height
+// }

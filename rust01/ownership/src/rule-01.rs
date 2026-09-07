@@ -5,7 +5,7 @@
 //3. when the owner goes out of scope the value will be dropped.
 fn main() {
     let s1 = String :: from ("rust");
-    let len = calc_len(&s1);
+    let len = calc_len(&s1);  // referenced immutable by default    
     // i am accessing the value "&s1" without taking ownership which is called reference.
     //Because the reference does not own it, the value it points to will not be dropped when the reference stops being used.
 
@@ -83,3 +83,5 @@ fn calc_len(s:&String)->usize {
      */
 
     
+
+    //As in real life, if a person owns something, you can borrow it from them. When you’re done, you have to give it back. You don’t own it.
