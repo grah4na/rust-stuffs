@@ -52,6 +52,29 @@ fn main() {
         Ok(result) =>println!("result {}", result), // `result` created here by destructuring Ok(T)
         Err(err) => println!("error {}",err),       // `err` created here by destructuring Err(E)
     }
+       
 
+    /*
+    fn main (){
+        panic!("its a panic macro we use to create warning")
+    }
+
+    if we need to know which function causing the panic we can run program in this manner : RUST_BACKTRACE=1 CARGO RUN  which will backtrace the panic in this program
+
+    
+     */
+     
+
+//      fn test() -> Result<i32, String> {
+//     let x = divide(10, 0).unwrap();
+//     Ok(x)                                // here this function crashes due to unwrap 
+// }
+
+
+
+// fn test() -> Result<i32, String> {
+//     let x = divide(10, 0)?;
+//     Ok(x)                                // here returns the error from the current function due to "?"
+// }
 
 }
