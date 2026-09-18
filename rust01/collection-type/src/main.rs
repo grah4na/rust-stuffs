@@ -30,6 +30,36 @@ fn main() {
         None => println!("there is no element")
     }
 
+    //exaple to conduct actions over vec 
+
+    fn vec_map_example(input: &[i32]) -> Vec<i32> {
+    // An example of collecting a vector after mapping.
+    // We map each element of the `input` slice to its value plus 1.
+    // If the input is `[1, 2, 3]`, the output is `[2, 3, 4]`.
+    input.iter().map(|element| element + 1).collect()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // > UTF -8 
     //Its all about string here 
 

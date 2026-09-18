@@ -47,6 +47,15 @@ fn main() {
     // we can access the tuple value like this 
 
 
+     let cat = ("Furry McFurson", 3.5);
+
+    // Destructure the tuple in one statement
+    let (name, age) = cat;                     // which is called destrucring in tuples to access the value 
+
+    println!("{name} is {age} years old");
+
+
+
 
 
 
