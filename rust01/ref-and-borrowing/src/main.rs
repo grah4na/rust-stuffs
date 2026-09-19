@@ -44,3 +44,7 @@ impl BankAccount {
 // OUTPUT : acc owned by alice has a balance of 150.55
 // withdrawing 45.5 from acc owned by alice
 // acc owned by alice has a balance of 105.05000000000001
+
+
+fn get_char(data: String)     // here we are giving the ownership of the string to data, the main dont have access to string here the function does 
+fn get_char(data: &String)    // "&String" here it just BORROWS it to function , funtions owns nothing 
