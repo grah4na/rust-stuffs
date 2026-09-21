@@ -1,5 +1,8 @@
 //structs are similar to tuple but with no type inference 
 
+// rust has 3 types of struct 
+// 1.regular struct 2.tuple struct(basically just named struct ) 3.unit strcut (These don't have any fields and are useful for generics.)
+
 
 fn main() {
     
@@ -54,6 +57,10 @@ fn main() {
     }
 }
 
+
+//tyep 
+
+
 }
 
 
@@ -100,3 +107,10 @@ fn main() {
 
 //     dbg!(&rect1);
 // }
+
+/*
+unit like struct 
+
+
+
+*/

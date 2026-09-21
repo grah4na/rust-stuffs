@@ -79,6 +79,8 @@ fn main() {
 
     println!("concatenated string : {conc}");
 
+    // in rust we use "_" to ignore the value 
+
 
 
     // how hash map works 
