@@ -1,3 +1,8 @@
-options <T> 
+    1.options <T> 
 
-here if we need to get the value out of a option we use unwrap() method. 
+     if we need to get the value out of a option we use unwrap() method. 
+
+    2. the vec::pop() always return a option becasue a vec can be empty      
+    
+    let mut v = vec![10, 20, 30];
+    let x = v.pop();
