@@ -1,8 +1,39 @@
-    1.options <T> 
+1.options <T> 
 
-     if we need to get the value out of a option we use unwrap() method. 
+    if we need to get the value out of a option we use unwrap() method. 
 
-    2. the vec::pop() always return a option becasue a vec can be empty      
+2. the vec::pop() always return a option becasue a vec can be empty      
     
     let mut v = vec![10, 20, 30];
-    let x = v.pop();
+    let x = v.pop();    
+
+3. using ref 
+
+    /*
+    let maybe_name = Some(String::from("Alice"));
+    // The variable 'maybe_name' is consumed here ...
+    match maybe_name {
+    Some(n) => println!("Hello, {n}"),
+    _ => println!("Hello, world"),
+    }
+    // ... and is now unavailable.
+    println!("Hello again, {}", maybe_name.unwrap_or("world".into()));      //here the maybe_name is not available 
+    */
+
+    so now we use ref :
+
+    let maybe_name = Some(String::from("Alice"));
+    // Using `ref`, the value is borrowed, not moved ...
+    match maybe_name {
+    Some(ref n) => println!("Hello, {n}"),
+    _ => println!("Hello, world"),
+    }
+   // ... so it's available here!
+    println!("Hello again, {}", maybe_name.unwrap_or("world".into()));
+
+
+
+4. & vs ref
+    & denotes that your pattern expects a reference to an object. Hence & is a part of said pattern: &Foo matches different objects than Foo does.
+    
+    ref indicates that you want a reference to an unpacked value. It is not matched against: Foo(ref foo) matches the same objects as Foo(foo).
